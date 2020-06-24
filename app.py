@@ -61,7 +61,8 @@ for wantBook in wantBook_list:
             if book not in oldbook_list:
                 store_old_books.add(book)
 if len(store_old_books) != 0:
-    # lineNotify(token, str(store_old_books))
+    msg = u'New Book: ' + str(store_old_books)
+    lineNotify(token, str(msg))
     print(store_old_books)
     with open(bookFile, "w+", encoding="utf-8-sig") as fw:
         for item in store_old_books:
