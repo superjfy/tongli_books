@@ -18,7 +18,7 @@ def lineNotify(token, msg):
     return r.status_code
 
 
-bookFile = "/home/jeffyang/books.txt"
+bookFile = "/home/jfy_young/books.txt"
 oldbook_list = []
 if os.path.exists(bookFile):
     with open(bookFile, "r+" , encoding="utf-8-sig") as f:
@@ -32,7 +32,7 @@ else:
 
 store_old_books = set()
 # 欲取得的書名關鍵字
-wantBook_list = [u"火影", u"七龍珠", u"鬼滅"]
+wantBook_list = [u"火影", u"七龍珠"]
 token = "URcWh4jqXmWSxmpiPoraXBDeTXu0WWcFO0fFMkIdyHp"
 session = requests.Session()
 page_num = 1
