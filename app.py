@@ -18,7 +18,7 @@ def lineNotify(token, msg):
     return r.status_code
 
 
-bookFile = "/home/jfy_young/books.txt"
+bookFile = "/home/jfy_young/tongli_books/books.txt"
 oldbook_list = []
 if os.path.exists(bookFile):
     with open(bookFile, "r+" , encoding="utf-8-sig") as f:
